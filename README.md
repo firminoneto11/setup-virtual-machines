@@ -1,3 +1,3 @@
-# Setup WSL
+# Setup Virtual Machines
 
-### A simple tool for setting up wsl machines with the stack i work with
+### Go scripts to install some packages that i find necessary in some situations
