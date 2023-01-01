@@ -32,3 +32,16 @@ const Nginx string = `
 	sudo apt update
 	sudo apt install nginx
 `
+
+const NodejsAndYarn string = `
+	sudo apt update
+	sudo apt upgrade -y
+	curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+	sudo apt install nodejs -y
+	sudo apt update
+	sudo apt upgrade -y
+	curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+	echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+	sudo apt update
+	sudo apt install yarn -y
+`
